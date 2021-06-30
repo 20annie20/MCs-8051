@@ -21,7 +21,7 @@ start:	mov 	DPTR, 	#init_db
 	clr 	RW
 	clr 	RS
 	setb 	E
-	mov 	P3, 	#30h
+	mov 	P3, 	#01h
 	clr 	E
 	setb 	E
 init:	clr 	A
