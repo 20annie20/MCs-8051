@@ -8,8 +8,8 @@ DB 	0FFh, 023h
 ORG 48h
 DB	0FEh, 044h
 
-ORG 0000h			
-	ljmp	loop	
+ORG 0000h
+	ljmp	loop
 
 ORG 0100h
 
@@ -31,7 +31,7 @@ wczytaj_dane:
 	mov 	R3,	a
 	clr a
 	mov	a,	49h
-	mov 	R2,	a	
+	mov 	R2,	a
 	RET
 
 ORG 200h
@@ -50,7 +50,7 @@ trzybajtowa:
 	mov	a, #01h
 	mov	50h,	a
 	RET
-	
+
 odejmij:
 	clr	C
 	mov	A,	R0
@@ -61,12 +61,12 @@ odejmij:
 	mov	58h,	A
 	JC	wyzeruj
 	RET
-wyzeruj:	
+wyzeruj:
 	clr a
 	mov	58h, 	a
 	mov 	59h,	a
-	RET	
-	
+	RET
+
 pomnoz:
 	mov	A,	R0
 	mov	B,	R2
